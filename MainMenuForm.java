@@ -7,7 +7,7 @@ package login;
 
 /**
  *
- * @author NeverGiveUp
+ * Y. Hassan
  */
 public class MainMenuForm extends javax.swing.JFrame {
 
