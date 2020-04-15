@@ -1,5 +1,6 @@
-# Learning-Management-System
+# Learning-Management-System (LMS)
 UHD Spring 2020 Software Development Team 
 1.	Project Description
-Generally speaking, Learning Management System deals with all kind of student details, academic related reports, college details, course details, curriculum, batch details and other resource related details too.  It tracks all the details of a student from the day one to the end of his course which can be used for all reporting purpose, tracking of attendance, progress in the course, completed semesters years, coming semester year curriculum details, exam details, project or any other assignment details, final exam result etc. Requirements
-The clients need to build a student information management system. This system doesn’t need to include all features and functions as shown in the paragraph above. The software system only stores and retrieves students’ partial information in the current semester and other basic information including student’s name, student’s ID, registered courses in the current semester, each exam’s score in one course, GPA calculation in the current semester. 
+This project, Learning Management System, deals with student details, academic related reports, college details, course details, batch details and other resource related details. It tracks all the details of a student from the day one to the end of his course which covers all reporting purpose, progress in the course, exam details, other assignment details, and exam results. 
+The clients need to build a student information management system. This system doesn’t include all features and functions of LMS. The software system only stores and retrieves students’ partial information in the current semester and other basic information including student’s name, student’s ID, registered courses in the current semester, each exam’s score in one course, GPA calculation in the current semester. 
+The database management system used here is MySql.
