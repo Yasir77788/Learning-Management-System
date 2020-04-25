@@ -43,7 +43,7 @@ import schoolmanagement.Administrator.user;
 
 /**
  *
- * @author KevinHa
+ * @author Group Team
  */
 
 public class DatabaseConnection {
