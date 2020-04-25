@@ -48,7 +48,7 @@ import javafx.stage.StageStyle;
 
 /**
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class MainController implements Initializable {
     
