@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.Administrator.CreateStudentAccountController">
+    <stylesheets>
+        <URL value="@/schoolmanagement/styles.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="33.0" prefHeight="50.0" prefWidth="359.0" styleClass="TitleBG" stylesheets="@../styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="72.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Basic_0000s_0007s_0004_Profile.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label prefHeight="50.0" prefWidth="359.0" styleClass="TitleBG" stylesheets="@../styles.css" text="Create Student Account" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="525.0" layoutY="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Pane prefWidth="400.0">
+               <children>
+                  <Pane prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <TextField fx:id="txt_firstname" layoutY="16.0" prefHeight="40.0" prefWidth="190.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="First Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="55.0" prefWidth="190.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="210.0" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <TextField fx:id="txt_lastname" layoutY="16.0" prefHeight="40.0" prefWidth="190.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="190.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Last Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="62.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <TextField fx:id="txt_phonenumber" layoutY="16.0" prefHeight="40.0" prefWidth="400.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Phone Number">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="124.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <DatePicker fx:id="txt_birthday" editable="false" layoutY="18.0" prefHeight="25.0" prefWidth="400.0" styleClass="textfield" stylesheets="@../styles.css" />
+                        <Separator layoutY="55.0" prefWidth="365.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Birthday">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="209.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <TextField fx:id="txt_street" layoutY="16.0" prefHeight="40.0" prefWidth="400.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Street">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="273.0" prefHeight="50.0" prefWidth="140.0">
+                     <children>
+                        <TextField fx:id="txt_city" layoutY="16.0" prefHeight="40.0" prefWidth="140.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="140.0" />
+                        <Label prefHeight="25.0" prefWidth="140.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="City">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="150.0" layoutY="273.0" prefHeight="50.0" prefWidth="140.0">
+                     <children>
+                        <TextField fx:id="txt_state" layoutY="16.0" prefHeight="40.0" prefWidth="140.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="140.0" />
+                        <Label prefHeight="25.0" prefWidth="140.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="State">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="300.0" layoutY="273.0" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <TextField fx:id="txt_zipcode" layoutY="16.0" prefHeight="40.0" prefWidth="100.0" styleClass="textfield_White_BG" stylesheets="@../styles.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Separator layoutY="55.0" prefWidth="100.0" />
+                        <Label prefHeight="25.0" prefWidth="100.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Zipcode">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_container" layoutY="523.0" prefWidth="250.0">
+                     <children>
+                        <Button fx:id="btn_create" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#OnCreateClicked" prefWidth="250.0" styleClass="Button_White_BG" stylesheets="@../styles.css" text="Create" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btn_container1" layoutX="253.0" layoutY="523.0" prefWidth="147.0">
+                     <children>
+                        <Button fx:id="btn_clear" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#OnClearClicked" prefHeight="46.0" prefWidth="147.0" styleClass="Button_White_BG" stylesheets="@../styles.css" text="Clear" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Bauhaus 93" size="26.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="351.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <ComboBox fx:id="combo_degree" layoutY="16.0" prefHeight="40.0" prefWidth="400.0" promptText="Select Degree" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Degree">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="424.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <ComboBox fx:id="combo_major" layoutY="16.0" prefHeight="40.0" prefWidth="400.0" promptText="Select Major" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Major">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

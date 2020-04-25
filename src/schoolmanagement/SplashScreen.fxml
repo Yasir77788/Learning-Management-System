@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="872.0" style="-fx-background-color: rgba(0,0,0,0);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="schoolmanagement.SplashScreenController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="54.0" prefHeight="270.0" prefWidth="453.0">
+         <children>
+            <Pane id="SchoolLogoBackground" layoutX="-14.0" prefHeight="270.0" prefWidth="467.0" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="167.0" fitWidth="397.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="167.0" text="UNIVERSITY OF HOUSTON" textAlignment="CENTER" textFill="#092e6e">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="187.0" text="DOWNTOWN" textAlignment="CENTER" textFill="#092e6e">
+                     <font>
+                        <Font name="System Bold" size="55.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="502.0" layoutY="54.0" prefHeight="270.0" prefWidth="374.0">
+         <children>
+            <Pane id="SchoolLogoBackground" layoutX="6.0" prefHeight="270.0" prefWidth="363.0" stylesheets="@styles.css">
+               <children>
+                  <ImageView fitHeight="116.0" fitWidth="276.0" layoutX="87.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo_blue.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="164.0" text="STRONG" textAlignment="CENTER" textFill="#092e6e">
+                     <font>
+                        <Font name="System Bold" size="63.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="87.0" layoutY="-15.0" text="FINISH" textAlignment="CENTER" textFill="#092e6e">
+                     <font>
+                        <Font size="86.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="400.0" fitWidth="288.0" layoutX="312.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/gatorsymbol.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

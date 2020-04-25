@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefWidth="700.0" styleClass="Course_popup_detail" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.mylibs.Course_detailController">
+    <stylesheets>
+        <URL value="@/schoolmanagement/styles.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane fx:id="container" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <BorderPane prefWidth="200.0" stylesheets="@../../SchoolManagement/src/schoolmanagement/styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="44.0" prefWidth="500.0" style="-fx-background-color: #333333; -fx-background-radius: 25 25 0 0;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Course Detail" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="30.0" prefHeight="1.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <VBox prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Code: " textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_code" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" text="ACC 1301" textAlignment="RIGHT">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Name:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_name" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" text="Accounting for Non-Business Majors" textAlignment="RIGHT">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="50.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Description:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_desc" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="578.0" text="Desc" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="90.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Prerequisite:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_prere" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="579.0" text="Prere" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="90.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Credit:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_credit" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="4" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="180.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Meet Time:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_meetTime" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="11:30-12:45 MO-WE" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="265.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Session:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_session" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="Regular Academic Session" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="210.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Room:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_room" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="612" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="240.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Instructor:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_instr" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="Kevin Ha" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="270.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Mode:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_mode" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="Face to Face" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="300.0" prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="120.0" text="Status:" textAlignment="RIGHT">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="lbl_status" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefWidth="343.0" text="Open" wrapText="true">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="60.0" style="-fx-background-color: #333333; -fx-background-radius: 0 0 25 25;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Separator prefHeight="0.0" prefWidth="200.0" valignment="TOP" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <HBox alignment="CENTER" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <children>
+                              <Button fx:id="btn_add" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#OnAddClicked" prefWidth="250.0" styleClass="Button_White_BG" stylesheets="@../schoolmanagement/styles.css" text="Add" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="26.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_close" alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#OnCloseClicked" prefWidth="150.0" styleClass="Button_White_BG" stylesheets="@../schoolmanagement/styles.css" text="Cancel" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="26.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

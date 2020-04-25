@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.Administrator.Main_dashboardController">
+   <stylesheets>
+      <URL value="@/schoolmanagement/styles.css" />
+   </stylesheets>
+   <children>
+      <Pane layoutY="33.0" prefHeight="50.0" prefWidth="359.0" styleClass="TitleBG" stylesheets="@../styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="72.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Basic_0000s_0002s_0004_Layout.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label prefHeight="50.0" prefWidth="359.0" styleClass="TitleBG" stylesheets="@../styles.css" text="Dashboard" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="525.0" layoutY="200.0" prefWidth="1250.0" spacing="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <AnchorPane prefHeight="234.0" prefWidth="310.0">
+               <children>
+                  <ImageView fitHeight="241.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-196.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../images/bg_student.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label stylesheets="@../styles.css" text="Student" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_totalStudent" layoutX="14.0" layoutY="94.0" stylesheets="@../styles.css" text="2000000" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="94.0">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="480.0" layoutY="10.0" prefHeight="234.0" prefWidth="310.0">
+               <children>
+                  <ImageView fitHeight="241.0" fitWidth="310.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-196.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../images/bg_professor.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label stylesheets="@../styles.css" text="Professor" textFill="WHITE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_totalProfessor" layoutX="14.0" layoutY="91.0" stylesheets="@../styles.css" text="2000000" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="94.0">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

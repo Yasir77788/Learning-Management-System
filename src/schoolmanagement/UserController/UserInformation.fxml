@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1250.0" styleClass="mainFxmlClass" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.UserController.UserInformationController">
+   <children>
+      <Pane layoutY="33.0" prefHeight="50.0" prefWidth="359.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="72.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Basic_0000s_0007s_0004_Profile.png" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+            <Label prefHeight="50.0" prefWidth="359.0" styleClass="TitleBG" stylesheets="@../styles.css" text="Your Information" />
+         </children>
+         <effect>
+            <Reflection fraction="0.39" topOpacity="0.22" />
+         </effect>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="525.0" layoutY="84.0" prefHeight="666.0" prefWidth="1250.0" spacing="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Pane prefHeight="550.0" prefWidth="420.0" styleClass="Pane_Container" stylesheets="@../styles.css">
+               <children>
+                  <Pane layoutX="10.0" layoutY="111.0" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Label fx:id="txt_firstname" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR FIRST NAME]" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="First Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="55.0" prefWidth="190.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="220.0" layoutY="111.0" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="190.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Last Name">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_lastname" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR LAST NAME]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="173.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Email">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_email" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR EMAIL]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="234.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Phone Number">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_phonenumber" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR PHONE NUMBER]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="296.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Birthday">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_birthday" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR BIRTHDAY]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="381.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Street">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_street" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR STREET]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="445.0" prefHeight="50.0" prefWidth="140.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="140.0" />
+                        <Label prefHeight="25.0" prefWidth="140.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="City">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_city" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR CITY]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="160.0" layoutY="445.0" prefHeight="50.0" prefWidth="140.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="140.0" />
+                        <Label prefHeight="25.0" prefWidth="140.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="State">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_state" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR STATE]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="310.0" layoutY="445.0" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Separator layoutY="55.0" prefWidth="100.0" />
+                        <Label prefHeight="25.0" prefWidth="100.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Zipcode">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txt_zip" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR ZIP]" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="40.0" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Label fx:id="txt_id" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR ID]" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Your ID">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="55.0" prefWidth="190.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="-3.0" layoutY="3.0" prefHeight="30.0" prefWidth="420.0" styleClass="textfield_White_BG_Label_Title" stylesheets="@../styles.css" text="Basic Information" underline="true" />
+               </children>
+            </Pane>
+            <Pane prefHeight="162.0" prefWidth="420.0" styleClass="Pane_Container" stylesheets="@../styles.css">
+               <children>
+                  <Pane layoutX="10.0" layoutY="111.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Label fx:id="txt_major" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR MAJOR]" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Major">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="40.0" prefHeight="50.0" prefWidth="400.0">
+                     <children>
+                        <Label fx:id="txt_degree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="UserInfo_Label" stylesheets="@../styles.css" text="[YOUR DEGREE]" />
+                        <Label prefWidth="190.0" styleClass="textfield_White_BG_Label" stylesheets="@../styles.css" text="Degree">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="55.0" prefWidth="400.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="-3.0" layoutY="3.0" prefHeight="30.0" prefWidth="420.0" styleClass="textfield_White_BG_Label_Title" stylesheets="@../styles.css" text="Degree Information" underline="true" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
