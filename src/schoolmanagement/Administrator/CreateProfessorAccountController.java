@@ -21,7 +21,7 @@ import schoolmanagement.DatabaseConnection;
 /**
  * FXML Controller class
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class CreateProfessorAccountController implements Initializable {
 
