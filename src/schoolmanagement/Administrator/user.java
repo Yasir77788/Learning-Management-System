@@ -13,7 +13,7 @@ import javafx.beans.property.StringProperty;
 
 /**
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class user {
 
