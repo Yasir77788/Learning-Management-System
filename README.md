@@ -4,4 +4,3 @@ This project deals with student details, academic related reports, college detai
 This system doesn’t include all features and functions of LMS. The software system only stores and retrieves students’ partial information in the current semester and other basic information including student’s name, student’s ID, registered courses in the current semester, each exam’s score in one course, GPA calculation in the current semester. 
 The database management system used here is MySql.
 
-My name is Tong Ha, I am going to re push whole project that we have done again.
