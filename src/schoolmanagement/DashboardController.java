@@ -56,7 +56,7 @@ import schoolmanagement.UserController.UpdateInformationController;
 /**
  * FXML Controller class
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class DashboardController implements Initializable {
 
