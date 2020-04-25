@@ -26,7 +26,7 @@ import jdk.nashorn.internal.objects.NativeArray;
 
 /**
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class validation {
     void validateMesasge(String FieldName, TextField tf){
