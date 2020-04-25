@@ -24,7 +24,7 @@ import javafx.stage.StageStyle;
 /**
  * FXML Controller class
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class SplashScreenController implements Initializable {
 
