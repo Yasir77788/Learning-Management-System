@@ -23,7 +23,7 @@ import javafx.stage.WindowEvent;
 
 /**
  *
- * @author KevinHa
+ * @author Group Team
  */
 public class SchoolManagement extends Application {
     double xx, yy;
