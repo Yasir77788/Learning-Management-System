@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" onMouseDragged="#rootMouseDragged" onMousePressed="#rootMousePressed" prefHeight="480.0" prefWidth="800.0" style="-fx-background-color: rgba(0,0,0,0);" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.MainController">
+   <children>
+      <ImageView fitHeight="492.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bg_login.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="440.0" prefHeight="480.0" prefWidth="360.0" stylesheets="@styles.css">
+         <children>
+            <Pane layoutY="86.0" prefHeight="46.0" prefWidth="360.0">
+               <children>
+                  <RadioButton fx:id="rad_student" layoutX="22.0" layoutY="11.0" mnemonicParsing="false" selected="true" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="Student">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="role" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rad_staff" layoutX="124.0" layoutY="11.0" mnemonicParsing="false" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="Staff" textFill="WHITE" toggleGroup="$role" />
+                  <RadioButton fx:id="rad_admin" layoutX="203.0" layoutY="11.0" mnemonicParsing="false" selected="true" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="Administrator" textFill="WHITE" toggleGroup="$role" />
+               </children>
+            </Pane>
+            <Pane layoutX="56.0" layoutY="133.0" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="txt_username" layoutY="10.0" prefHeight="40.0" prefWidth="250.0" styleClass="textfield_White_BG" stylesheets="@styles.css" text="admin">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Separator layoutY="50.0" prefWidth="250.0" />
+                  <Label prefWidth="250.0" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="56.0" layoutY="198.0" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <PasswordField fx:id="txt_password" layoutY="10.0" prefHeight="40.0" prefWidth="250.0" styleClass="textfield_White_BG" stylesheets="@styles.css" text="1234abcd">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Separator layoutY="50.0" prefWidth="250.0" />
+                  <Label prefWidth="250.0" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="Password">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="btn_container" layoutX="51.0" layoutY="260.0">
+               <children>
+                  <Button fx:id="btn_signin" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onMouseClicked="#OnSigninClicked" prefWidth="250.0" styleClass="Button_White_BG" stylesheets="@styles.css" text="Login" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Bauhaus 93" size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button accessibleText="Close " layoutX="326.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onCloseButtonClicked" prefHeight="20.0" prefWidth="20.0" styleClass="TitleBar_Button_Close" stylesheets="@styles.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="btn_forgotpassword" layoutX="110.0" layoutY="313.0" onMouseClicked="#OnForgotPasswordClicked" styleClass="textfield_White_BG_Label" stylesheets="@styles.css" text="Forgot Password?" />
+            <ProgressIndicator fx:id="loading" prefHeight="40.0" prefWidth="34.0" visible="false" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="400.0" />
+         </children>
+      </AnchorPane>
+      <Pane layoutY="40.0" prefHeight="311.0" prefWidth="385.0">
+         <children>
+            <ImageView fitHeight="169.0" fitWidth="284.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/UHD-Logo-stacked_small.png" />
+               </image>
+               <effect>
+                  <Glow level="0.75" />
+               </effect>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="195.0" text="BLACK BOARD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+               <effect>
+                  <Glow level="0.69" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

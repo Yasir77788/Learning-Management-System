@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" onMouseClicked="#OnRootClicked" onMouseDragged="#OnRootDragged" prefHeight="840.0" prefWidth="1540.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.DashboardController">
+   <children>
+      <AnchorPane prefHeight="831.0" prefWidth="1500.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#rootOnMouseDragged" onMousePressed="#rootOnMousePressed" prefHeight="831.0" prefWidth="1500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="822.0" prefWidth="100.0" styleClass="Dashboard_LeftMenuBackground" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="130.0" prefWidth="251.0" styleClass="Dashboard_LeftMenuBackground" stylesheets="@styles.css" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="161.0" fitWidth="173.0" layoutX="45.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/UHD-Logo-stacked_small.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <ScrollPane hbarPolicy="NEVER" layoutY="126.0" prefHeight="634.0" prefWidth="251.0" styleClass="Dashboard_LeftMenuBackground" stylesheets="@styles.css">
+                           <content>
+                              <VBox maxHeight="1.7976931348623157E308" prefWidth="252.0" styleClass="Dashboard_LeftMenuBackground" stylesheets="@styles.css">
+                                 <children>
+                                    <Pane fx:id="Button_Dashboard" focusTraversable="true" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_dashboard" mnemonicParsing="false" onMouseClicked="#OnYourDashboardClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Dashboard" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0002s_0004_Layout.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_YourAccount" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_youraccount" mnemonicParsing="false" onMouseClicked="#OnYourAccountClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="[STUDENT NAME]" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0007s_0004_Profile.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_YourAccountDetail" layoutX="10.0" layoutY="55.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_youraccountdetail" mnemonicParsing="false" onMouseClicked="#OnYourInformationClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Your Information" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0004s_0004_List.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_UpdateInformation" layoutX="10.0" layoutY="100.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_youraccountdetail1" mnemonicParsing="false" onMouseClicked="#OnUpdateInformationClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Update Information" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0007s_0002_Edit.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_ChangePassword" layoutX="10.0" layoutY="142.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_youraccountdetail11" mnemonicParsing="false" onMouseClicked="#OnChangePasswordClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Change Password" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0009s_0005_Shield.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_ActivityStream" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_annoucement" mnemonicParsing="false" onMouseClicked="#OnAnnoucementClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Annoucements" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0000s_0006_Message.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_Courses" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_courses" mnemonicParsing="false" onMouseClicked="#OnCoursesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Courses" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0007s_0000_Screen.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_AddNewCourse" layoutX="40.0" layoutY="190.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_AddnewCourse" mnemonicParsing="false" onMouseClicked="#OnAddNewCourseClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Add New Course" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0003s_0005_More.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_ViewCourses" layoutX="40.0" layoutY="370.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_ViewCourse" mnemonicParsing="false" onMouseClicked="#OnViewCoursesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Your Courses" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0004s_0009_Menu.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_SearchCourse" layoutX="10.0" layoutY="325.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_searchcourses" mnemonicParsing="false" onMouseClicked="#OnSearchCoursesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Search" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0001s_0001_Search.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_Organizations" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_organizations" mnemonicParsing="false" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Organizations" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0006s_0004_Rocket.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_Grades" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_grades" mnemonicParsing="false" onMouseClicked="#OnGradesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Grades" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0004s_0004_List.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_CoursesGrades" layoutX="40.0" layoutY="190.0" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_coursesgrade" mnemonicParsing="false" onMouseClicked="#OnCoursesGradesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Courses Grades" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0004s_0009_Menu.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_GPA" maxHeight="0.0" prefHeight="45.0" prefWidth="250.0" visible="false">
+                                       <children>
+                                          <Button fx:id="btn_transcript" mnemonicParsing="false" onMouseClicked="#OnTranscriptClicked" prefHeight="45.0" prefWidth="250.0" styleClass="SubMenuButton" stylesheets="@styles.css" text="Transcript" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0000s_0008_Sheet.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </Pane>
+                                    <Pane fx:id="Button_DueDates" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_duedates" mnemonicParsing="false" onMouseClicked="#OnDueDatesClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Due Dates" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0008s_0008_Timer.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_Settings" layoutX="10.0" layoutY="235.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_settings" mnemonicParsing="false" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Settings" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0007s_0009_Settings.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_Dashboard_Admin" focusTraversable="true" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_dashboard_admin" mnemonicParsing="false" onMouseClicked="#OnAdminDashboardClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Dashboard" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0002s_0004_Layout.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_CreateAccount" layoutX="10.0" layoutY="370.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_createstudentaccount" mnemonicParsing="false" onMouseClicked="#OnCreateStudentAccountClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Create Student Account" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0003s_0005_More.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_CreateProAccount" layoutX="10.0" layoutY="550.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_createprofessoraccount" mnemonicParsing="false" onMouseClicked="#OnCreateProfessorAccountClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Create Professor Account" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0003s_0005_More.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_StudentList" layoutX="10.0" layoutY="415.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_searchStudent" mnemonicParsing="false" onMouseClicked="#OnStudentListClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Student List" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0001s_0001_Search.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane fx:id="Button_ProfessorList" layoutX="10.0" layoutY="505.0" prefHeight="45.0" prefWidth="250.0">
+                                       <children>
+                                          <Button fx:id="btn_searchStudent1" mnemonicParsing="false" onMouseClicked="#OnStaffListClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Professor List" />
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Basic_0000s_0001s_0001_Search.png" />
+                                             </image>
+                                             <effect>
+                                                <InnerShadow />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <Pane layoutY="751.0" prefHeight="45.0" prefWidth="251.0" styleClass="Dashboard_TitleBarBackground" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0">
+                           <children>
+                              <Button fx:id="btn_signout1" focusTraversable="false" mnemonicParsing="false" onMouseClicked="#OnSignoutClicked" prefHeight="45.0" prefWidth="250.0" styleClass="MainMenuButton" stylesheets="@styles.css" text="Sign out" />
+                              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/Basic_0000s_0004s_0002_Log-Out.png" />
+                                 </image>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <top>
+                  <AnchorPane prefHeight="27.0" styleClass="Dashboard_TitleBarBackground" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button id="btn_Close" fx:id="btn_close" mnemonicParsing="false" onMouseClicked="#OnCloseClicked" prefHeight="20.0" prefWidth="20.0" stylesheets="@styles.css" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn_Maximize" fx:id="btn_maximized" layoutX="1498.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#onMaximizedClicked" prefHeight="20.0" prefWidth="20.0" stylesheets="@styles.css" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                        <Button id="btn_Minimize" fx:id="btn_minimized" layoutX="1488.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#OnMinimizedClicked" prefHeight="20.0" prefWidth="20.0" stylesheets="@styles.css" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="2.0">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane fx:id="main_area" prefHeight="540.0" prefWidth="1250.0" styleClass="mainFxmlClass" stylesheets="@styles.css" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SchoolManagement.jnlp">
+  <information>
+    <title>SchoolManagement</title>
+    <vendor>KevinHa</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SchoolManagement.jar" size="4645149" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.19.jar" size="2356711" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="schoolmanagement.SchoolManagement"  name="SchoolManagement" />
+  <update check="always"/>
+</jnlp>

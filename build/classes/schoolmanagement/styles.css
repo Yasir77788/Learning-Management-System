@@ -1,0 +1,768 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 2, 2020, 1:08:51 PM
+    Author     : KevinHa
+*/
+
+.root {
+    -fx-background-color: transparent;
+    
+}
+.main{
+    -fx-background-image: url(images/bg-white.png);
+    
+}
+.mainFxmlClass {
+    -fx-background-color: #999999;
+    -fx-background-image: url(images/bg-white.png);
+    
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+     
+}
+.textfield_White_BG{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    
+}
+.textfield_White_BG_Label{
+    -fx-text-fill: #666666;
+    -fx-font-size: 16;
+    -fx-padding: 0 0 0 5;
+    
+}
+.textfield_White_BG_Label_Title{
+    -fx-text-fill: #666666;
+    -fx-font-size: 20;
+    -fx-padding: 0 0 0 5;
+    
+}
+.titlebar {
+    -fx-background-color: #092b46; 
+}
+#SchoolLogoPane {
+    -fx-background-color: #092e6e;
+    
+}
+#SchoolLogoBackground {
+    -fx-background-color: #f6f6f6;
+    
+}
+#SchoolLoginPanBackground {
+    -fx-background-color: #f6f6f6;
+    
+}
+#btn_Login {
+    -fx-background-color: #092e6e;
+    
+    -fx-text-fill: #ffffff;
+    
+}
+#btn_Login:hover {
+    -fx-background-color: #007b42;
+    
+    -fx-text-fill: #ffffff;
+    
+}
+#btn_Close {
+    -fx-background-color: #e13939;
+    -fx-text-fill: #3f3f3f;
+    -fx-background-radius: 10;
+    -fx-font-size: 8;
+    -fx-font-weight: bold;
+    
+    
+    
+}
+#btn_Close:hover {
+    -fx-background-color: #e13939;
+    -fx-text-fill: #ffffff;
+    
+}
+#btn_Minimize {
+    -fx-background-color: #ffff66;
+    -fx-text-fill: #3f3f3f;
+    -fx-background-radius: 10;
+    -fx-font-size: 8;
+    -fx-font-weight: bold;
+    
+    
+    
+}
+#btn_Minimize:hover {
+    -fx-background-color: #ffff66;
+    -fx-text-fill: #ffffff;
+    
+}
+#btn_Maximize {
+    -fx-background-color: #00cc66;
+    -fx-text-fill: #3f3f3f;
+    -fx-background-radius: 10;
+    -fx-font-size: 8;
+    -fx-font-weight: bold;
+}
+#btn_Maximize:hover {
+    -fx-background-color: #00cc66;
+    -fx-text-fill: #ffffff;
+    
+}
+#loginTitleBackground {
+    -fx-background-color: #092e6e;
+    
+}
+/* Button */
+.Button_Main{
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 25;
+    -fx-border-color: #3f3f3f;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+}
+.AddNew_btn{
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 25;
+    -fx-border-color: #3f3f3f;
+    -fx-border-radius: 25;
+    -fx-font-weight: bold;
+}
+
+/* Dashboard */
+.MainMenuButton {
+   -fx-background-color: transparent;
+   -fx-text-fill:#3f3f3f;
+   -fx-font-size: 15;
+   -fx-alignment: CENTER_LEFT;
+   -fx-padding: 0 10 0 50;
+    
+}
+
+.MainMenuButton:hover{
+    -fx-border-color: #fdaaaa;
+    -fx-border-width: 1;
+}
+.MainMenuButton:pressed {
+
+    -fx-background-color: #fdaaaa;  
+}
+.MainMenuButton:focused{
+    -fx-background-color: #fdaaaa;
+    -fx-text-fill: #3f3f3f;
+    
+}
+
+.SubMenuButton {
+   -fx-background-color: transparent;
+   -fx-text-fill:#3f3f3f;
+   -fx-font-size: 15;
+   -fx-alignment: CENTER_LEFT;
+   -fx-padding: 0 10 0 50;
+   -fx-border-width: 0 0 0 1;
+   -fx-border-color: #666666;
+    
+}
+.SubMenuButton:hover{
+    -fx-border-color: #fdaaaa;
+    -fx-border-width: 1;
+}
+.SubMenuButton:pressed {
+
+    -fx-background-color: #fdaaaa;  
+}
+.SubMenuButton:focused{
+    -fx-background-color: #fdaaaa;
+    -fx-text-fill: #3f3f3f;
+    
+}
+/* Title Bar Controller */
+.TitleBar_Button_Close {
+    -fx-background-color: #e13939;
+    -fx-background-radius: 15;
+    
+}
+.TitleBar_Button_Minimize {
+    -fx-background-color: #ffff66;
+    -fx-background-radius: 15;
+    
+}
+
+/* Main Login */
+.Login_ColorBackground {
+    -fx-background-color: #333333;
+    
+}
+.Login_LogoColorBackground {
+    -fx-background-color: #f6f6f6;
+    
+}
+.Button_Dark_BG {
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 25;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    
+}
+.Button_White_BG {
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 25;
+    -fx-border-color: #3f3f3f;
+    -fx-border-radius: 25;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    
+}
+/* Dashboard */
+.Dashboard_TitleBarBackground {
+    -fx-background-color: #ffffff;
+    
+}
+.Dashboard_LeftMenuBackground {
+    -fx-background-color: #ffffff;
+    
+}
+/* Hyper Link */
+.Link_ForgotPassword {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    
+}
+/* Title Bar */
+.label_titlebar {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    
+}
+/* Capcha */
+.Capcha_Pane {
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 25;
+    
+}
+/* Create Account */
+.TitleBG{
+    -fx-background-color: transparent;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 20;
+    -fx-padding: 0 0 0 50;
+    
+}
+.TitleContainerBG{
+    -fx-background-image: url(images/bg-dark.png);
+    
+}
+.TitleContainerText{
+    -fx-text-fill: #f6f6f6;
+    -fx-font-size: 20;
+    -fx-padding: 0 0 0 50;
+    
+}
+.TitleText{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+    -fx-text-alignment: center;
+    -fx-padding: 0 0 0 50;
+    
+}
+.label_Textfield_Black_BG {
+    -fx-text-fill: #f6f6f6;
+    -fx-font-size: 16;
+    -fx-padding: 0 0 0 5;
+    
+}
+
+/* List View */
+.ListView_Label {
+    -fx-text-fill: #f6f6f6;
+    -fx-font-size: 14;
+    -fx-padding: 0 10 0 10;
+    
+}
+/* User Information Text */
+.UserInfo_Label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-padding: 30 0 0 10;
+    
+    
+    
+}
+/* User Information Pane */
+.Pane_Container {
+    
+    -fx-padding: 20 0 0 0;
+    -fx-border-radius: 15;
+    
+}
+/* Scroll pane */
+.scroll-pane   { 
+    -fx-background-color: #ffffff; 
+    -fx-border-color: #ffffff;
+    
+
+}
+.scroll-pane > .viewport   { 
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    
+    
+
+}
+.Dashboard_course_item_pane{
+    -fx-border-width: 0 0 0 3;
+    -fx-border-color: #000000;
+    
+}
+.Dashboard_course_item_text{
+    -fx-text-fill: #000000;
+    -fx-font-size: 16;
+    
+}
+.Dashboard_course_item_text:hover{
+    -fx-text-fill: #000000;
+    -fx-font-size: 16;
+    -fx-font-weight:bold;
+    
+}
+
+/* courses */
+.Courses_Panel {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0 10 10 0;
+    
+    -fx-border-color: transparent;
+
+    -fx-border-radius: 0 10 10 0;
+    
+    
+}
+.Courses_Panel:hover {
+    -fx-border-color: #fdaaaa;
+    -fx-background-color: #fdaaaa;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-radius: 0 10 10 0;
+}
+.Course_left_column{
+    -fx-background-color: #3f3f3f;
+    -fx-border-color: #3f3f3f;
+
+    
+}
+.Courses_idcode{
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+.Courses_Panel_Title {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 10;
+    
+}
+.Courses_Panel_Content {
+    -fx-font-size: 15;
+    -fx-padding: 0 0 0 40;
+    
+}
+/* Last Course */
+.lastcourst_container {
+    -fx-border-color: #3f3f3f;
+    -fx-border-width: 0 0 0 4;
+    -fx-background-color: #f6f6f6;
+    
+}
+.lastcourst_title_detail {
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-text-fill: #666666;
+    -fx-padding: 5 0 0 5;
+    
+}
+.lastcourst_session {
+    -fx-font-size: 15;
+    -fx-text-fill: #666666;
+    -fx-padding: 5 0 0 5;
+    
+}
+
+/* Course Search header */
+.label_course_header{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    
+}
+.label_course_detail{
+    -fx-font-size: 15;
+    
+}
+.course-scroll-pane .viewport {  
+   -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+.course_detail_container{
+    
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: transparent;
+}
+.course_detail_container:hover{
+    
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: #000000;
+    -fx-background-color: #fdaaaa;
+}
+.course_detail_link{
+    -fx-text-fill:  #3366ff;
+    -fx-font-size: 15; 
+}
+.course_detail_link:hover{
+    -fx-text-fill:  #3366ff;
+    -fx-font-size: 15; 
+    -fx-font-weight: bold;
+}
+/* Course Popup Detail */
+.course_popup_outter{
+    -fx-background-color: transparent;
+    
+}
+.Course_popup_detail {
+    -fx-background-color: transparent;
+    -fx-background-radius: 25;
+    -fx-border-color: transparent;
+    -fx-border-radius: 25;
+    
+    
+}
+/* Annoucement Item*/
+.Annouce_item{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #999999; 
+    -fx-border-radius: 5;
+    
+}
+.Annouce_item:hover{
+    -fx-background-color: #fdaaaa;;
+    -fx-background-radius: 5;
+    -fx-border-color: #e13939; 
+    -fx-border-radius: 5;
+    
+}
+.Annouce_item_header{
+    -fx-background-color: #3f3f3f;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 10;
+}
+.Annouce_item_content{
+    -fx-font-size: 13;
+    -fx-padding: 0 0 0 10;
+}
+.Annouce_item_bottom{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-padding: 10 10 0 10;
+    -fx-font-style: italic;
+}
+.Annouce_item_new{
+    -fx-background-color: #e13939;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #e13939;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: CENTER;
+    -fx-padding: 5 3 5 3;
+    -fx-font-size: 13;
+    
+}
+/* Annoucement Detail*/
+.Annouce_detail{
+    -fx-background-color: #ffffff;
+    -fx-border-color: transparent; 
+    -fx-border-width: 1;
+    
+}
+.Annouce_detail:hover{
+    -fx-background-color: #fdaaaa;
+    -fx-border-color: #e13939; 
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    
+}
+.Annouce_detail:pressed{
+    -fx-background-color: #e13939;
+    -fx-background-radius: 5;
+    -fx-border-color: #e13939; 
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    
+}
+.Annouce_detail:focused{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #e13939; 
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    
+}
+.Annouce_detail_header{
+    -fx-background-color: #3f3f3f;
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-padding: 5 5 5 10;
+}
+.Annouce_detail_title{
+    -fx-font-size: 13;
+    -fx-padding: 0 0 0 10;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-font-style: underline;
+}
+.Annouce_detail_content{
+    -fx-font-size: 13;
+    -fx-padding: 5 0 0 10;
+    -fx-font-size: 17;
+    -fx-font-style: underline;
+}
+.Annouce_detail_postdate{
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 10 0 10;
+    -fx-font-style: italic;
+    -fx-font-size: 15;
+}
+.Annouce_detail_new{
+    -fx-background-color: #e13939;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #e13939;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: CENTER;
+    -fx-padding: 5 5 3 5;
+    -fx-font-size: 17;
+    
+}
+/* Grade List */
+.edge-to-edge {  
+   -fx-background-image: url(images/bg-white.png);
+   -fx-border-color: transparent;
+}
+
+.Grade_container{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #999999;
+    -fx-alignment: CENTER_LEFT;
+    
+    -fx-background-radius: 10;
+    
+    
+}
+.Grade_code_container {
+    -fx-background-color: #3f3f3f;
+    
+}
+.Grade_course_header{
+    -fx-alignment: CENTER;
+    
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5 5 5 5;
+    
+}
+.Grade_course_header_name{
+    
+    -fx-font-weight: bold;
+    -fx-text-fill: #3f3f3f;
+    -fx-padding: 5 5 5 10;
+    
+}
+.Grade_course_header_other{
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3f3f3f;
+    -fx-padding: 5 5 5 5;
+    
+}
+Grade_course_box{
+    -fx-alignment: CENTER_LEFT
+    
+}
+.Grade_course_code{
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+
+
+}
+.Grade_course_name{
+    
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 10;
+}
+.Grade_course_grade{
+    -fx-alignment: CENTER;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10 0 10;
+    -fx-alignment: CENTER;
+    -fx-background-color: #00cc66;
+    -fx-background-radius: 60;
+    
+}
+.Grade_course_grade_letter{
+    -fx-alignment: CENTER;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-padding: 0 10 0 10;
+    -fx-alignment: CENTER;
+    -fx-background-color: #00cc66;
+    -fx-background-radius: 60;
+    
+}
+/* Transcript */
+.term{
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-alignment: CENTER;
+}
+.header{
+    -fx-font-size: 18;
+    
+}
+/* List Empty Note */
+.list_empty_note{
+    -fx-font-size: 18;
+    -fx-alignment: CENTER;
+    
+}
+/* Course Detail */
+.course_menu_button{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1;
+    -fx-border-color: transparent;
+    
+}
+.course_menu_button:hover{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1;
+    -fx-border-color: #000000;
+    
+}
+.course_menu_button:pressed{
+    -fx-border-width: 1;
+    -fx-border-color: #e13939;
+    
+}
+
+.course_menu_text{
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 20;
+    
+}
+
+
+.course_submenu_text{
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 20;
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #3f3f3f;
+}
+
+/* Homework */
+.homework_item_container{
+    -fx-background-color: #ffffff;
+    -fx-border-color:transparent;
+    -fx-border-width: 2;
+}
+.homework_item_container:hover{
+    -fx-background-color: #fdaaaa;
+    -fx-border-color:#e13939;
+    -fx-border-width: 2;
+}
+.homework_header_left{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #3f3f3f;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 20 0 0 20;
+    -fx-alignment:CENTER_LEFT;
+    
+}
+.homework_header_center{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #3f3f3f;
+    -fx-text-fill: #3f3f3f;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 20 0 0 20;
+    -fx-alignment:CENTER;
+    
+}
+.homework_content{
+
+    -fx-font-size: 20;
+    -fx-padding: 0 0 10 20;
+    -fx-alignment:TOP_LEFT;
+}
+.homework_instruction{
+
+    -fx-font-size: 16;
+    -fx-padding: 0 0 10 40;
+    -fx-alignment:TOP_LEFT;
+    -fx-line-spacing: -3;
+}
+
+.Duedate{
+    -fx-font-size: 18;
+    
+}
+.Duedate_course{
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    
+}
+.Duedate_circle{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-border-color: #000000;
+    -fx-border-radius: 20;
+    
+}
+.UserHeader{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    
+}
+.UserContent{
+    -fx-font-size: 15;
+    -fx-padding: 10 0 10 0
+    
+}

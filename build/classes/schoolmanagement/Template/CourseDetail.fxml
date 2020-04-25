@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane styleClass="Courses_Panel" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanagement.UserController.CourseDetailController">
+   <children>
+      <Label fx:id="txt_course_name" maxWidth="1333.0" prefWidth="500.0" styleClass="Courses_Panel_Title" stylesheets="@../styles.css" text="[COURSE CODE]: [COURSE NAME]" wrapText="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label fx:id="txt_professor_name" layoutX="15.0" layoutY="20.0" maxWidth="1333.0" prefWidth="500.0" styleClass="Courses_Panel_Content" stylesheets="@../styles.css" text="[PROFESSOR NAME]" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="40.0" />
+      <Label fx:id="txt_meeting_time" layoutX="25.0" layoutY="65.0" maxWidth="1333.0" prefWidth="500.0" styleClass="Courses_Panel_Content" stylesheets="@../styles.css" text="[MEETING TIME]" wrapText="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="70.0" />
+      <Label fx:id="txt_meeting_day" layoutX="35.0" layoutY="95.0" maxWidth="1333.0" prefWidth="500.0" styleClass="Courses_Panel_Content" stylesheets="@../styles.css" text="[MEETING DAY]" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>
